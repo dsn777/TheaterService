@@ -1,0 +1,1 @@
+-- ALTER TABLE purchase_ticket ADD CONSTRAINT unique_ticket UNIQUE (ticket_id);

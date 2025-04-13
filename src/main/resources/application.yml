@@ -1,0 +1,32 @@
+server:
+  #address: 192.168.0.198
+  port: 8080
+
+spring:
+  sql:
+    init:
+      data-locations: classpath:db/data.sql
+      mode: NONE
+  datasource:
+    url: jdbc:mysql://localhost:3306/theaterdatabase
+    username: root
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+
+feign:
+  email:
+    url: http://localhost:8081/api/email
+
+
+
+#  cache:
+#    type: redis
+#  redis:
+#    host: localhost
+#    port: 6379
+#    password:
+#    timeout: 2000
