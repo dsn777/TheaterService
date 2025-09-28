@@ -16,8 +16,4 @@ public class EventCacheServiceImpl implements EventCacheService {
     public void clear() {
         log.info("{} has been cleared at {}", CURRENT_EVENTS_CACHE_NAME, Instant.now());
     }
-
-    @Override
-    public void remove(Long id) {
-    }
 }

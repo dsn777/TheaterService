@@ -20,13 +20,3 @@ spring:
 feign:
   email:
     url: http://localhost:8081/api/email
-
-
-
-#  cache:
-#    type: redis
-#  redis:
-#    host: localhost
-#    port: 6379
-#    password:
-#    timeout: 2000

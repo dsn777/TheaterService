@@ -19,13 +19,13 @@ public class PerformanceController {
     private final PerformanceService performanceService;
 
     @GetMapping
-    public ResponseEntity<?> getAllPerfomances() {
+    public ResponseEntity<?> getAllPerformances() {
         List<PerformanceDto> performanceDtos = performanceService.getPerformances();
         return ResponseEntity.ok(performanceDtos);
     }
 
     @GetMapping("/id")
-    public ResponseEntity<?> getPerfomanceById(@PathVariable Long id) {
+    public ResponseEntity<?> getPerformanceById(@PathVariable Long id) {
         //допилить функционал
         List<PerformanceDto> performanceDtos = performanceService.getPerformances();
         return ResponseEntity.ok(performanceDtos);
